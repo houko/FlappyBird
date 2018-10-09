@@ -1,0 +1,8 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/SaleSysMain.master" AutoEventWireup="true" CodeFile="Default2.aspx.cs" Inherits="BaseInfo_Default2" Title="Untitled Page" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+    <asp:ScriptManager id="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    
+</asp:Content>
+

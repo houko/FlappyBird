@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SaleSysMain.master.cs" Inherits="SaleSysMain" %>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head id="Head1" runat="server">
+    <title>销售系统</title>
+   
+    
+</head>
+<body BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+    <form id="form1" runat="server">
+    <div>
+<TABLE WIDTH=770 BORDER=0 CELLPADDING=0 CELLSPACING=0 align="center">
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="images/default_1.gif" WIDTH=770 HEIGHT=148 ></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 style="background-color: #9ea29e; font-size: 12px; color: white;" height="20px">
+            <table cellspacing="0">
+                <tr>
+                    <td style="width: 806px">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 操作员：<asp:Label ID="Label1" runat="server"
+                Text="Label"></asp:Label></td>
+                    <td align="right" style="width: 650px">
+                        当前日期：<asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </TD>
+	</TR>
+	
+	<TR>
+		<TD valign="top" background="images/default_6.gif" style="height: 17px; width: 30px;">
+			<IMG SRC="images/default_3.gif"  ></TD>
+		<TD ROWSPAN=2 HEIGHT=653 valign="top" style="width: 477px; background-image: url(images/default_5.gif);">
+		
+		<div id="content">
+                <asp:contentplaceholder id="MainContent" runat="server">
+                </asp:contentplaceholder>
+         </div>
+
+        </TD>
+
+	</TR>
+	<TR>
+		<TD valign="top" background="images/default_6.gif" align="left" style="width: 25px; height: 413px">
+            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource" ImageSet="News" NodeIndent="10" ShowLines="True" Width="197px">
+                <ParentNodeStyle Font-Bold="False" />
+                <HoverNodeStyle Font-Underline="True" />
+                <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+                <NodeStyle Font-Names="Arial" Font-Size="10pt" ForeColor="Black" HorizontalPadding="5px"
+                    NodeSpacing="0px" VerticalPadding="0px" />
+            </asp:TreeView>
+            <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
+    </TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3> 
+			<IMG SRC="images/default_8.gif" WIDTH=770 HEIGHT=8 ></TD>
+	</TR>
+</TABLE>
+            <div id="footer">
+                <div id="footer-menu">
+                    <a href="#"></a>&nbsp;</div>
+                <div id="footer-copyright" align="center">
+                    Copyright<font color="#000000"> EveryBody
+                    </font>
+                </div>
+                <!-- end #footer -->
+            </div>
+    </div>
+    </form>
+</body>
+</html>

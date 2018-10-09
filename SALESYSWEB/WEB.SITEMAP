@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+<siteMapNode url="Welcome.aspx" title="销售系统" description="欢迎页">
+    <siteMapNode url="~/BaseInfo/Default.aspx" title="公司商品信息"  description="首页">
+        <siteMapNode url="~/BaseInfo/disCompany.aspx" title="公司信息管理"  description="公司信息管理" />
+        <siteMapNode url="~/BaseInfo/addCompany.aspx" title="添加公司信息"  description="添加公司信息" />
+		<siteMapNode url="~/BaseInfo/disCommoditys.aspx" title="商品信息管理"  description="商品信息管理" />
+		<siteMapNode url="~/BaseInfo/addCommoditys.aspx" title="添加商品信息"  description="添加商品信息" />	
+    </siteMapNode>
+
+	<siteMapNode url="~/stock/Default.aspx" title="进货信息"  description="首页" >
+		<siteMapNode url="~/stock/addstockInfo.aspx" title="添加进货信息"  description="添加进货信息" />
+		<siteMapNode url="~/stock/quitStockInfo.aspx" title="添加进货退货信息"  description="添加进货退货信息" />
+	</siteMapNode>
+
+	<siteMapNode url="~/Sale/Default.aspx" title="销售信息"  description="首页" >
+		<siteMapNode url="~/Sale/addSaleInfo.aspx" title="添加销售信息"  description="添加销售信息" />
+		<siteMapNode url="~/Sale/quitSaleInfo.aspx" title="添加销售退货信息"  description="添加销售退货信息" />
+	</siteMapNode>
+
+
+	<siteMapNode url="~/Query/Default.aspx" title="查询信息"  description="首页" >
+		<siteMapNode url="~/Query/StockQuery.aspx" title="进货查询"  description="进货查询" />
+		<siteMapNode url="~/Query/SaleQuery.aspx" title="销售查询"  description="销售查询" />
+		<siteMapNode url="~/Query/topSale.aspx" title="热销商品查询"  description="热销商品查询" />
+	</siteMapNode>
+
+	<siteMapNode url="~/Sysset/Default.aspx" title="系统管理"  description="首页" >
+		<siteMapNode url="~/Sysset/addUser.aspx" title="添加用户"  description="添加用户" />
+		<siteMapNode url="~/Sysset/userManage.aspx" title="用户管理"  description="用户管理" />
+	</siteMapNode>
+	
+</siteMapNode>
+</siteMap>
